@@ -1,4 +1,6 @@
 let start = new Date().getTime();
+let timeoutId;
+let times = [];
 
 function getRandomColor() {
   const letters = "0123456789ABCDEF";
@@ -28,7 +30,16 @@ function makeShapeAppear() {
 }
 
 function appearAfterDelay() {
-  setTimeout(makeShapeAppear, Math.random() * 2000);
+  timeoutId = setTimeout(makeShapeAppear, Math.random() * 2000);
+}
+
+function updateTopTimes() {
+  times.sort((a, b) => a - b);
+  const topTimes = times.slice(0, 3);
+
+  document.getElementById("topTimes").innerHTML = `Top 3 Times: ${topTimes
+    .map((time) => `${time}s`)
+    .join(", ")}`;
 }
 
 document.getElementById("shape").onclick = function () {
@@ -37,9 +48,20 @@ document.getElementById("shape").onclick = function () {
   const end = new Date().getTime();
   const timeTaken = (end - start) / 1000;
 
+  times.push(timeTaken);
+
   document.getElementById("timeTaken").innerHTML = `${timeTaken}s`;
 
+  updateTopTimes();
+
   appearAfterDelay();
+};
+
+document.getElementById("stopButton").onclick = function () {
+  clearTimeout(timeoutId);
+  document.getElementById("shape").style.display = "none";
+  document.getElementById("timeTaken").innerHTML = "Test Stopped";
+  updateTopTimes();
 };
 
 appearAfterDelay();
