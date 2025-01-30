@@ -1,6 +1,6 @@
 # Reaction Tester
 
-This is a simple **Reaction Tester** web application built with **HTML**, **CSS**, and **JavaScript**. The basis of this application is to test how quicly a user can click on randomly generated shapes that appear in random locations of the page. As ther user plays around with the application, their top three time also gets recorded and is displayed in the interface.  
+This is a simple **Reaction Tester** web application built with **HTML**, **CSS**, and **JavaScript**. The basis of this application is to test how quickly a user can click on randomly generated shapes that appear in random locations on the page. As the user plays around with the application, their top three times also get recorded and are displayed in the interface.  
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ This is a simple **Reaction Tester** web application built with **HTML**, **CSS*
 
 ## Demo
 
-You can see a live demo of the project [here](https://tarek514.github.io/Advanced-To-Do-List/).
+You can see a live demo of the project [here](https://tarek514.github.io/Reaction-Tester/).
 
 ## Technologies Used
 
@@ -28,6 +28,6 @@ You can see a live demo of the project [here](https://tarek514.github.io/Advance
 
 ## Author
 
-- Website - [Tarek Hossain Portfolio](https://my-portfolio-kappa-two-32.vercel.app/)
+- Website - [Tarek Hossain Portfolio](https://tarek-hossain.netlify.app/)
 - Frontend Mentor - [@Tarek514](https://www.frontendmentor.io/profile/Tarek514)
 - LinkedIn - [@Tarek Hossain](https://www.linkedin.com/in/tarek-hossain-95b573254/)
